@@ -1,0 +1,73 @@
+#:kivy 2.3.0
+
+# <EZCalculatorApp>
+   
+<Button>:
+    size_hint_x: None
+    size_hint_y: None
+    size:(100, 100)
+    font_size: 50
+   
+    
+<FloatLayout>:
+    # pos_hint:{'y':1, 'x':0.5}
+
+    GridLayout:
+        pos_hint:{'y':1, 'x':0.5}
+        size: root.size
+        rows:2
+        cols:1
+        # size_hint: 1,1
+        
+        spacing:40
+        # canvas.before:
+        #     Color:
+        #         rgba: (1,0,0,1)
+        #     Rectangle:
+        #         pos: 100, 100
+        #         size: root.width -200, root.height -200
+        
+    # Rectangle:
+    #     pos: self.center
+
+        Label:
+            text: 'Hello!'
+            font_size: 50
+            
+            pos: 100, 100
+        
+        GridLayout:
+            cols:2
+            spacing:50
+            size_hint: 1,1
+        
+            Button:
+                text:'numButtons'
+
+            Button:
+                text:'opsButtons'
+        # Label:
+        # id: "Display"
+            # text: "HELLO!!!"
+            # font_size: 50
+        # canvas.before:
+        #     Color: 
+        #         rgba: (.5,.3,1,1)
+            # Rectangle:
+            #     pos:self.center
+
+        #         size: 
+        # cols: 2
+        # size: root.width, root.height
+        # spacing:10
+        # padding:[100, 50, 100, 20]
+        
+
+        # add_widget(Display())
+        # self.add_widget(Buttons())
+
+       
+
+            
+
+            
